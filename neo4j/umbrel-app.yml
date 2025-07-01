@@ -1,0 +1,39 @@
+version: "0.1.0"
+
+slug: "neo4j"
+name: "Neo4j"
+description: "Neo4j est une base de données de graphes puissante et populaire."
+releaseNotes: "Ajout de Neo4j à l'App Store Umbrel."
+
+# Icône officielle Neo4j (SVG ou PNG, 256x256 recommandé)
+icon: "https://neo4j.com/wp-content/themes/neo4jweb/assets/images/neo4j-logo-2021.svg"
+
+# Catégorie de l'application
+category: "Database"
+
+# Auteur
+developer:
+  name: "Neo4j, Inc."
+  url: "https://neo4j.com/"
+
+# Documentation
+support:
+  url: "https://neo4j.com/docs/"
+
+# Port d'accès à l'interface web
+port: 7474
+
+# Dépendances (aucune pour Neo4j)
+dependencies: []
+
+# Docker Compose
+compose:
+  file: "docker-compose.yml"
+
+# Répertoires à sauvegarder
+backup:
+  paths:
+    - "/data"
+    - "/logs"
+    - "/var/lib/neo4j/import"
+    - "/plugins"
